@@ -7,57 +7,55 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#1F2937;line-height:1.7}
+body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#1F2937;line-height:1.7;overflow-x:hidden}
 h1,h2,h3{font-family:'Playfair Display',serif;color:#111827}
 .top{position:sticky;top:0;z-index:100;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:16px 6%;border-bottom:1px solid #E5E7EB}
 .top b{letter-spacing:2px;font-size:16px}
 .top a{color:#374151;text-decoration:none;font-size:12px;letter-spacing:1px;margin-left:20px;font-weight:500}
 .top a.btn-top{background:#111827;color:#fff;padding:10px 20px;border-radius:30px}
-.hero{background:#F9FAFB;padding:60px 6% 55px;text-align:center;border-bottom:1px solid #E5E7EB}
-.logo-box{width:180px;height:180px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:1px solid #E5E7EB;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero{background:#F9FAFB;padding:55px 6%;text-align:center;border-bottom:1px solid #E5E7EB}
+.logo-box{width:180px;height:180px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:1px solid #E5E7EB;overflow:hidden}
 .logo-box img{width:100%;height:100%;object-fit:cover}
-.hero span{font-size:11px;letter-spacing:4px;color:#6B7280;font-weight:600}
-.hero h1{font-size:48px;line-height:1.1;margin:14px 0}
-.hero p{max-width:700px;margin:0 auto;color:#4B5563;font-weight:300;font-size:16px}
+.hero span{font-size:11px;letter-spacing:3px;color:#6B7280;font-weight:600}
+.hero h1{font-size:42px;line-height:1.15;margin:14px 0}
+.hero p{max-width:700px;margin:0 auto;color:#4B5563;font-weight:300;font-size:15px}
 .btn{display:inline-block;background:#111827;color:#fff;padding:15px 32px;border-radius:40px;text-decoration:none;font-size:13px;letter-spacing:1px;margin-top:22px}
-.btn-grey{background:#fff;color:#111827;border:1px solid #111827}
-.wrap{max-width:1100px;margin:0 auto;padding:55px 6%}
-.sec-title{text-align:center;margin-bottom:30px}
+.wrap{max-width:1100px;margin:0 auto;padding:50px 6%}
+.sec-title{text-align:center;margin-bottom:28px}
 .sec-title span{font-size:11px;letter-spacing:3px;color:#9CA3AF;font-weight:600}
-.sec-title h2{font-size:36px;margin-top:8px}
+.sec-title h2{font-size:34px;margin-top:8px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:30px}
-.card h3{font-size:20px;margin-bottom:8px}
-.card p{font-size:14px;color:#4B5563}
-.badge{display:inline-block;background:#F3F4F6;padding:5px 12px;border-radius:20px;font-size:11px;letter-spacing:1px;margin:3px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:28px}
+.card h3{font-size:21px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #F3F4F6}
+.card ul{list-style:none}
+.card ul li{font-size:14px;color:#4B5563;padding:5px 0;padding-left:18px;position:relative;line-height:1.5}
+.card ul li:before{content:"•";position:absolute;left:0;color:#111827;font-weight:bold}
+.badge{display:inline-block;background:#F3F4F6;padding:6px 12px;border-radius:20px;font-size:12px;margin:4px}
 .plan-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
-.plan{background:#fff;border:1px solid #E5E7EB;border-radius:20px;padding:32px;text-align:center}
+.plan{background:#fff;border:1px solid #E5E7EB;border-radius:20px;padding:30px;text-align:center}
 .plan.pop{background:#111827;color:#fff}
-.plan.pop p{color:#D1D5DB}
-.plan.pop ul{color:#E5E7EB}
-.price{font-family:'Playfair Display',serif;font-size:40px;margin:12px 0}
-.plan ul{list-style:none;text-align:left;font-size:14px;line-height:2.1;margin-top:15px}
-.plan ul li:before{content:"✓  "}
+.plan.pop p,.plan.pop ul{color:#E5E7EB}
+.price{font-family:'Playfair Display',serif;font-size:38px;margin:10px 0}
+.plan ul{list-style:none;text-align:left;font-size:14px;line-height:2.1;margin-top:12px}
 .process{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;text-align:center}
-.process div{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:24px}
-.process b{font-size:30px}
-.footer{background:#111827;color:#fff;text-align:center;padding:45px 20px}
+.process div{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:22px}
+.footer{background:#111827;color:#fff;text-align:center;padding:40px 20px}
 .footer a{color:#fff}
-@media(max-width:700px){.grid,.plan-grid,.process{grid-template-columns:1fr}.hero h1{font-size:34px}.top a{display:none}.top a.btn-top{display:inline-block}}
+@media(max-width:700px){.grid,.plan-grid,.process{grid-template-columns:1fr}.hero h1{font-size:30px}.top a{display:none}.top a.btn-top{display:inline-block}}
 </style>
 </head>
 <body>
 
 <div class="top">
 <b>AM RESEARCHER</b>
-<div><a href="#categories">CATEGORIES</a><a href="#plans">PLANS</a><a href="#process">PROCESS</a><a href="https://wa.me/923178508915" class="btn-top">WHATSAPP</a></div>
+<div><a href="#categories">CATEGORIES</a><a href="#plans">PLANS</a><a href="https://wa.me/923178508915" class="btn-top">WHATSAPP</a></div>
 </div>
 
 <div class="hero">
 <div class="logo-box"><img src="logo.png" alt="AM Researcher"></div>
 <span>PRODUCT MANUFACTURING • BRANDING • PRIVATE LABEL • MARKETING SUPPORT</span>
-<h1>Complete Product Manufacturing<br>& Brand Development Proposal</h1>
-<p style="margin-top:12px;font-weight:500;color:#111827">Complete Solutions — From Concept to Ready-to-Sale Products</p>
+<h1>Complete Product Manufacturing<br>& Brand Development</h1>
+<p style="margin-top:10px;font-weight:500;color:#111827">Complete Solutions — From Concept to Ready-to-Sale Products</p>
 <p>AM Researcher provides product development and manufacturing solutions for entrepreneurs, startups, retailers and established businesses. We help turn product ideas into professionally presented, market-ready products.</p>
 <a class="btn" href="https://wa.me/923178508915">START YOUR PROJECT ON WHATSAPP →</a>
 <p style="font-size:13px;margin-top:12px;color:#6B7280">WhatsApp: 0317 8508915</p>
@@ -66,43 +64,48 @@ h1,h2,h3{font-family:'Playfair Display',serif;color:#111827}
 <div class="wrap" id="categories">
 <div class="sec-title"><span>WHAT WE MANUFACTURE</span><h2>Our Product Categories</h2></div>
 <div class="grid">
-<div class="card"><h3>1. Skin Care Products</h3><p>Face Wash & Face Cleanser • Gold Facial & Face Masks • Face Creams, Moisturizers & Body Lotions • Serums, Toners & Sunscreen • Scrubs and Customized Skin-Care Products</p></div>
-<div class="card"><h3>2. Hair Care Products</h3><p>Shampoo & Conditioner • Hair Serum, Hair Oil & Hair Mask • Hair Treatment and Styling Products • Customized Hair-Care Ranges</p></div>
-<div class="card"><h3>3. Perfumes & Fragrances</h3><p>Eau de Parfum (EDP) & Eau de Toilette (EDT) • Body Mist & Perfume Spray • Roll-On Perfume & Perfume Oils • Perfume Wax, Solid Perfume & Perfume Gel • Room and Fabric Fragrances</p></div>
-<div class="card"><h3>4. Personal Care & Other Products</h3><p>Body Wash, Hand Wash & Deodorants • Bath and Body Products • Personal-Care and Hygiene Products • Customized Products Developed to Client Requirements</p></div>
+
+<div class="card"><h3>1. Skin Care Products</h3><ul><li>Face Wash & Face Cleanser</li><li>Gold Facial & Face Masks</li><li>Face Creams, Moisturizers & Body Lotions</li><li>Serums, Toners & Sunscreen</li><li>Scrubs & Customized Skin-Care Products</li></ul></div>
+
+<div class="card"><h3>2. Hair Care Products</h3><ul><li>Shampoo & Conditioner</li><li>Hair Serum, Hair Oil & Hair Mask</li><li>Hair Treatment & Styling Products</li><li>Customized Hair-Care Ranges</li></ul></div>
+
+<div class="card"><h3>3. Perfumes & Fragrances</h3><ul><li>Eau de Parfum (EDP)</li><li>Eau de Toilette (EDT)</li><li>Body Mist & Perfume Spray</li><li>Roll-On Perfume & Perfume Oils</li><li>Perfume Wax & Solid Perfume</li><li>Room & Fabric Fragrances</li></ul></div>
+
+<div class="card"><h3>4. Personal Care Products</h3><ul><li>Body Wash, Hand Wash & Deodorants</li><li>Bath & Body Products</li><li>Personal-Care & Hygiene Products</li><li>Customized Products As Per Client Requirement</li></ul></div>
+
 </div>
 </div>
 
 <div class="wrap" style="background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;max-width:100%">
 <div style="max-width:1100px;margin:0 auto;padding:0 6%">
-<div class="sec-title"><span>END-TO-END SUPPORT</span><h2>Complete Brand Development</h2><p style="color:#4B5563;max-width:700px;margin:10px auto">We offer end-to-end support to help clients develop their own product range and brand.</p></div>
+<div class="sec-title"><span>END-TO-END SUPPORT</span><h2>Complete Brand Development</h2><p style="color:#4B5563">We offer end-to-end support to help clients develop their own product range and brand.</p></div>
 <div style="text-align:center">
-<span class="badge">Product Research & Development</span><span class="badge">Customized Formulation</span><span class="badge">Manufacturing Planning & Production</span><span class="badge">Quality Checks & Product Testing</span><span class="badge">Bottle, Jar & Packaging Selection</span><span class="badge">Logo, Label & Box Design</span><span class="badge">Private-Label Brand Development</span><span class="badge">Bulk & Project-Based Production</span><span class="badge">Ready-to-Sale Product Preparation</span>
+<span class="badge">Product Research & Development</span><span class="badge">Customized Formulation</span><span class="badge">Manufacturing Planning</span><span class="badge">Quality Checks & Testing</span><span class="badge">Bottle, Jar & Packaging Selection</span><span class="badge">Logo, Label & Box Design</span><span class="badge">Private-Label Brand Development</span><span class="badge">Bulk & Project-Based Production</span><span class="badge">Ready-to-Sale Preparation</span>
 </div>
-<h3 style="text-align:center;margin-top:35px;font-size:24px">Marketing & Business Support</h3>
-<p style="text-align:center;color:#4B5563;max-width:800px;margin:10px auto">To support product launches and brand growth, AM Researcher can also assist with product photography and mockups, social media post design, product catalogues, marketing copy and product descriptions, launch planning, promotional packaging, digital-marketing coordination and retail presentation materials.</p>
+<h3 style="text-align:center;margin-top:30px;font-size:24px">Marketing & Business Support</h3>
+<p style="text-align:center;color:#4B5563;max-width:800px;margin:10px auto">To support product launches and brand growth, AM Researcher can also assist with product photography and mockups, social media post design, product catalogues, marketing copy, launch planning, promotional packaging, digital-marketing coordination and retail presentation materials.</p>
 </div>
 </div>
 
 <div class="wrap" id="plans">
-<div class="sec-title"><span>PROJECT PLANS</span><h2>Investment Plans</h2><p style="color:#4B5563">Transparent, project-based pricing. Final pricing is confirmed according to product specifications, quantities, testing requirements and timelines.</p></div>
+<div class="sec-title"><span>PROJECT PLANS</span><h2>Investment Plans</h2><p style="color:#4B5563">Transparent, project-based pricing. Final pricing is confirmed according to product specifications, quantities and timelines.</p></div>
 <div class="plan-grid">
 <div class="plan"><h3>STARTER</h3><div class="price">Rs. 50,000</div><p>Minimum Starting Project</p><ul><li>1 Product Development</li><li>Customized Formulation</li><li>Logo & Label Design</li><li>100 Pieces Production</li><li>Basic Packaging</li></ul><a class="btn" href="https://wa.me/923178508915?text=Hi%2C%20I%20want%20STARTER%20Plan%20Rs.%2050000">SELECT STARTER</a></div>
-<div class="plan pop"><span style="background:#fff;color:#111827;padding:6px 14px;border-radius:20px;font-size:11px;letter-spacing:1px;font-weight:600">MOST POPULAR</span><h3 style="margin-top:14px">GROWTH</h3><div class="price">Rs. 100,000</div><p>Complete Brand Launch</p><ul><li>2 - 3 Products Development</li><li>Complete Brand Setup</li><li>Logo + Packaging Design</li><li>300 Pieces Production</li><li>Product Photography Guidance</li></ul><a class="btn btn-grey" style="background:#fff;color:#111827" href="https://wa.me/923178508915?text=Hi%2C%20I%20want%20GROWTH%20Plan%20Rs.%20100000">SELECT GROWTH</a></div>
+<div class="plan pop"><span style="background:#fff;color:#111827;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:600">MOST POPULAR</span><h3 style="margin-top:12px">GROWTH</h3><div class="price">Rs. 100,000</div><p>Complete Brand Launch</p><ul><li>2 - 3 Products Development</li><li>Complete Brand Setup</li><li>Logo + Packaging Design</li><li>300 Pieces Production</li><li>Photography Guidance</li></ul><a class="btn" style="background:#fff;color:#111827" href="https://wa.me/923178508915?text=Hi%2C%20I%20want%20GROWTH%20Plan%20Rs.%20100000">SELECT GROWTH</a></div>
 <div class="plan"><h3>PREMIUM</h3><div class="price">Rs. 200,000</div><p>Full Scale Brand</p><ul><li>4 - 5 Products Development</li><li>Luxury Packaging</li><li>Marketing & Launch Support</li><li>500+ Pieces Production</li><li>1 Month Personal Guidance</li></ul><a class="btn" href="https://wa.me/923178508915?text=Hi%2C%20I%20want%20PREMIUM%20Plan%20Rs.%20200000">SELECT PREMIUM</a></div>
 </div>
 <p style="text-align:center;margin-top:18px;color:#6B7280;font-size:14px">Need a larger project? Custom projects above Rs. 200,000 are available. <a href="https://wa.me/923178508915" style="color:#111827;font-weight:600">Get Custom Quote →</a></p>
 </div>
 
-<div class="wrap" id="process" style="padding-top:0">
+<div class="wrap" style="padding-top:0">
 <div class="sec-title"><span>HOW IT WORKS</span><h2>Our Business Approach</h2><p style="color:#4B5563"><b>You Bring The Idea — We Help Develop The Product and Brand.</b><br>From formulation and manufacturing to packaging, branding and marketing support, AM Researcher works to make your product concept ready for the market.</p></div>
-<div class="process"><div><b>01</b><br><h3>Concept</h3><p style="font-size:14px;color:#4B5563">Share your idea & product requirements</p></div><div><b>02</b><br><h3>Development</h3><p style="font-size:14px;color:#4B5563">Formulation, testing & sampling</p></div><div><b>03</b><br><h3>Manufacturing</h3><p style="font-size:14px;color:#4B5563">Production, packaging & quality checks</p></div><div><b>04</b><br><h3>Launch</h3><p style="font-size:14px;color:#4B5563">Ready-to-sale products delivered to you</p></div></div>
+<div class="process"><div><b>01</b><br><h3>Concept</h3><p style="font-size:14px;color:#4B5563">Share your idea & requirements</p></div><div><b>02</b><br><h3>Development</h3><p style="font-size:14px;color:#4B5563">Formulation, testing & sampling</p></div><div><b>03</b><br><h3>Manufacturing</h3><p style="font-size:14px;color:#4B5563">Production, packaging & quality checks</p></div><div><b>04</b><br><h3>Launch</h3><p style="font-size:14px;color:#4B5563">Ready-to-sale products delivered</p></div></div>
 </div>
 
 <div class="wrap" style="padding-top:0;text-align:center">
 <h2 style="font-size:30px">Why Work With AM Researcher?</h2>
 <p style="color:#4B5563;margin-top:12px">Customized Product Solutions • Commercial Production Options • Competitive Project-Based Pricing • Packaging and Branding Support • Small and Bulk Production Options • One-Window Coordination</p>
-<p style="margin-top:20px;font-weight:600;letter-spacing:1px">FROM CONCEPT TO MANUFACTURING — FROM BRANDING TO MARKET.</p>
+<p style="margin-top:18px;font-weight:600;letter-spacing:1px">FROM CONCEPT TO MANUFACTURING — FROM BRANDING TO MARKET.</p>
 </div>
 
 <div class="footer">
